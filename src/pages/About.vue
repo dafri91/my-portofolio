@@ -286,15 +286,34 @@ watch(showModal, (val) => {
         </div>
 
         <!-- Personal Info -->
-        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold mb-4">Personal Info</h3>
-          <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-sm">
-            <li><strong>Email:</strong> dafrimulya78@gmail.com</li>
-            <li><strong>Phone:</strong> 081234567890</li>
-            <li><strong>Location:</strong> Riau, Indonesia</li>
-            <li><strong>Website:</strong> <a href="https://dafri-portofolio.vercel.app" target="_blank">dafri-portofolio</a></li>
-          </ul>
-        </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4">Personal Info</h3>
+            <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-sm">
+              <li class="flex items-center gap-2">
+                <Icon icon="mdi:email-outline" class="text-lg text-primary-600 dark:text-primary-400" />
+                <strong>Email:</strong> dafrimulya78@gmail.com
+              </li>
+              <li class="flex items-center gap-2">
+                <Icon icon="mdi:phone" class="text-lg text-primary-600 dark:text-primary-400" />
+                <strong>Phone:</strong> 081234567890
+              </li>
+              <li class="flex items-center gap-2">
+                <Icon icon="mdi:map-marker" class="text-lg text-primary-600 dark:text-primary-400" />
+                <strong>Location:</strong> Riau, Indonesia
+              </li>
+              <li class="flex items-center gap-2">
+                <Icon icon="mdi:web" class="text-lg text-primary-600 dark:text-primary-400" />
+                <strong>Website:</strong>
+                <a
+                  href="https://dafri-portofolio.vercel.app"
+                  target="_blank"
+                  class="text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-200 transition-colors duration-200"
+                >
+                  dafri-portofolio
+                </a>
+              </li>
+            </ul>
+          </div>
       </section>
 
       <!-- Projects Section -->
