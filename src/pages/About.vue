@@ -163,19 +163,33 @@ const isMobile = ref(false)
 const openModal = () => {
   if (isMobile.value) {
     showModal.value = true
-    document.body.style.overflow = 'hidden'
+    document.body.classList.add('modal-open') // biarkan Tailwind handle
   }
 }
 
 const closeModal = () => {
   showModal.value = false
-  document.body.classList.remove('modal-open')
+  const body = document.body
+
+  // Hapus class modal-open
+  body.classList.remove('modal-open')
+
+  // Pulihkan scroll ke posisi sebelum modal muncul (jika perlu)
+  body.style.overflow = ''
+  body.style.position = ''
+  body.style.width = ''
 }
 
 
 const checkMobile = () => {
   isMobile.value = window.innerWidth <= 768
+
+  // Jika layar bukan mobile dan modal masih terbuka, tutup modal
+  if (!isMobile.value && showModal.value) {
+    closeModal()
+  }
 }
+
 
 onMounted(() => {
   checkMobile()
@@ -228,11 +242,11 @@ watch(showModal, (val) => {
               I actively learn via online platforms like Dicoding, earning certificates in web, backend, and machine learning development.
               I'm currently diving into AI and Python algorithms/data structures.
             </p>
-            <div v-else>
+            <div v-else class="text-center">
               <p class="text-gray-700 dark:text-gray-300 text-left md:text-justify">
                 My name is Dafri Mulya. I am currently studying Informatics Engineering and have a strong interest in technology...
               </p>
-              <button @click="openModal" class="mt-4 btn-primary">
+              <button @click="openModal" class="mt-4  btn-primary">
                 Read More
               </button>
             </div>
@@ -240,9 +254,13 @@ watch(showModal, (val) => {
 
                     <!-- Modal (Only on Mobile) -->
           <teleport to="body">
-            <div v-if="showModal" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center px-4">
+            <div v-if="showModal" class="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center px-4">
               <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 relative">
-                <button @click="closeModal" class="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-xl">&times;</button>
+                  <Icon
+                    icon="mdi:close"
+                    @click="closeModal"
+                    class="absolute top-2 right-3 text-purple-700 hover:text-red-600 text-4xl font-bold cursor-pointer"
+                  />
                 <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Full About Me</h3>
                 <ul class="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300 text-sm md:text-base">
                   <li>My name is Dafri Mulya. I am currently studying Informatics Engineering and have a strong interest in web development.</li>

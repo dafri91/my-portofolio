@@ -37,13 +37,8 @@ const { isVisible, targetRef } = useIntersectionObserver({ threshold: 0.17 })
           <!-- Ringkasan About Me di Tengah -->
           <div class="grid grid-cols-1 gap-12 items-start">
             <div class="text-center max-w-3xl mx-auto">
-              <p class="text-left md:text-justify text-gray-600 dark:text-gray-400 mb-6">
+              <p class="text-justify md:text-justify text-gray-600 dark:text-gray-400 mb-6">
                 I have experience building front-end interfaces using HTML, CSS, JavaScript, Vue.js, and Tailwind CSS. I also explore back-end development using Node.js, Express.js, and MongoDB.
-              </p>
-              <p class="text-left md:text-justify text-gray-600 dark:text-gray-400 mb-6">
-                I enjoy continuously learning and creating modern, responsive websites. Currently, I am focused on improving my full-stack skills while studying as a university student.
-              </p>
-              <p class="text-left md:text-justify text-gray-600 dark:text-gray-400 mb-8">
                 I’m also interested in Artificial Intelligence (AI) and Machine Learning, and I’ve started learning their fundamentals using Python.
               </p>
               <button @click="navigateToAbout" class="btn-primary">

@@ -60,7 +60,7 @@ onMounted(() => {
           </div>
           
           <p class=" text-justify text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up">
-              I am an Informatics Engineering student with a strong enthusiasm for technologies like web and application development, as well as Machine Learning. I build simple websites and I’m currently learning backend development and expanding my knowledge in Machine Learning.
+              I am an Informatics Engineering student with a strong enthusiasm for technologies like web and application development, as well as Machine Learning.
           </p>
       <div class="flex flex-row flex-wrap items-center justify-center lg:justify-start gap-4 animate-slide-up">
         <button @click="navigateToPortfolio" class="btn-primary">
