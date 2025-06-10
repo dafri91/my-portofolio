@@ -56,7 +56,7 @@ onUnmounted(() => {
 
 <template>
 <header
-  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-900 dark:bg-gray-900 dark:bg-none"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#FFFBF5] dark:bg-gray-900 dark:bg-none"
   :class="[
     scrolled ? 'py-3 backdrop-blur-md shadow-md' : 'py-5',
     navbarVisible ? 'translate-y-0' : '-translate-y-full'
@@ -84,7 +84,15 @@ onUnmounted(() => {
           {{ link.name }}
         </router-link>
         
-        
+        <!-- Theme Toggle -->
+        <button
+          @click="toggleTheme"
+          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Toggle dark mode"
+        >
+          <SunIcon v-if="isDark" class="h-5 w-5" />
+          <MoonIcon v-else class="h-5 w-5" />
+        </button>
         
         <!-- CV Download Button -->
         <!-- <a
@@ -98,7 +106,14 @@ onUnmounted(() => {
 
       <!-- Mobile Menu Button -->
       <div class="flex items-center md:hidden space-x-4">
-
+        <button
+          @click="toggleTheme"
+          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Toggle dark mode"
+        >
+          <SunIcon v-if="isDark" class="h-5 w-5" />
+          <MoonIcon v-else class="h-5 w-5" />
+        </button>
         
         <button
           @click="toggleMobileMenu"
@@ -141,5 +156,5 @@ onUnmounted(() => {
   </header>
   
   <!-- Spacer to prevent content from hiding under fixed navbar -->
-  <div class="h-16 sm:h-20 bg-gray-900 "></div>
+  <div class="h-16 sm:h-20"></div>
 </template>

@@ -79,7 +79,7 @@ useMotion(contactRef, {
 </script>
 
 <template>
-  <div class="min-h-screen bg-hero-gradient bg-grid bg-gray-900 text-white">
+  <div class="min-h-screen bg-hero-gradient bg-grid text-white">
     <!-- Hero Section -->
     <div ref="heroRef">
       <HeroSection />

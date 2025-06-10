@@ -212,7 +212,7 @@ watch(showModal, (val) => {
 </script>
 
 <template>
-  <div ref="pageRef" class="bg-gray-950 dark:bg-gray-950 min-h-screen py-12 px-4">
+  <div ref="pageRef" class="bg-gray-50 dark:bg-gray-950 min-h-screen py-12 px-4">
     <div class="container mx-auto max-w-6xl">
       <!-- Hero Section -->
       <section class="flex flex-col md:flex-row items-center md:items-center gap-10 mb-5">
