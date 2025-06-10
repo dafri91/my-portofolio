@@ -84,15 +84,7 @@ onUnmounted(() => {
           {{ link.name }}
         </router-link>
         
-        <!-- Theme Toggle -->
-        <button
-          @click="toggleTheme"
-          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Toggle dark mode"
-        >
-          <SunIcon v-if="isDark" class="h-5 w-5" />
-          <MoonIcon v-else class="h-5 w-5" />
-        </button>
+        
         
         <!-- CV Download Button -->
         <!-- <a
@@ -106,14 +98,7 @@ onUnmounted(() => {
 
       <!-- Mobile Menu Button -->
       <div class="flex items-center md:hidden space-x-4">
-        <button
-          @click="toggleTheme"
-          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Toggle dark mode"
-        >
-          <SunIcon v-if="isDark" class="h-5 w-5" />
-          <MoonIcon v-else class="h-5 w-5" />
-        </button>
+
         
         <button
           @click="toggleMobileMenu"
