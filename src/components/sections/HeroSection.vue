@@ -44,7 +44,7 @@ onMounted(() => {
 </script>
 
 <template>
-<section class=" mt-4 md:mt-[-35px]  relative min-h-[90vh] flex items-center bg-[#FFFBF5] dark:bg-gray-900 dark:bg-none">
+<section class=" mt-4 md:mt-[-35px]  relative min-h-[90vh] flex items-center bg-gray-900 dark:bg-gray-900 dark:bg-none">
     <div class="absolute inset-0 bg-gradient-to-tr from-primary-50/50 to-secondary-50/20 dark:from-gray-950 dark:to-gray-900 -z-10"></div>
     
     <div class="container-custom">

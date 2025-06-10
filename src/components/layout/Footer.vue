@@ -17,7 +17,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="bg-gray-50 dark:bg-gray-800 pt-12 pb-8 mt-8">
+  <footer class="bg-gray-800 dark:bg-gray-800 pt-12 pb-8 mt-8">
     <div class="container-custom">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <div class="md:col-span-2">

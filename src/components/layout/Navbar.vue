@@ -56,7 +56,7 @@ onUnmounted(() => {
 
 <template>
 <header
-  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#FFFBF5] dark:bg-gray-900 dark:bg-none"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-900 dark:bg-gray-900 dark:bg-none"
   :class="[
     scrolled ? 'py-3 backdrop-blur-md shadow-md' : 'py-5',
     navbarVisible ? 'translate-y-0' : '-translate-y-full'
@@ -141,5 +141,5 @@ onUnmounted(() => {
   </header>
   
   <!-- Spacer to prevent content from hiding under fixed navbar -->
-  <div class="h-16 sm:h-20"></div>
+  <div class="h-16 sm:h-20 bg-gray-900 "></div>
 </template>

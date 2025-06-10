@@ -24,7 +24,7 @@ const skills = [
 const { isVisible, targetRef } = useIntersectionObserver({ threshold: 0.17 })
 </script>
 <template>
-  <section class="section bg-gray-50 dark:bg-gray-800/30">
+  <section class="section bg-gray-900 dark:bg-gray-800/30">
     <div class="container-custom">
           <div class="max-w-3xl mx-auto text-center mb-16">
             <h2 class="mb-4 text-center text-black dark:text-white">About Me</h2>
