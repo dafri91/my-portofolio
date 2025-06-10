@@ -15,7 +15,7 @@ const previewProjects = portfolioStore.projects.slice(0, 3);
 </script>
 
 <template>
-  <section class="section bg-gray-900">
+  <section class="section">
     <div class="container-custom">
       <div class="max-w-3xl mx-auto text-center mb-16">
         <h2 class="mb-4 dark:text-white text-black">Featured Projects</h2>

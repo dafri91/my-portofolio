@@ -9,7 +9,7 @@ const navigateToContact = () => {
 </script>
 
 <template>
-  <section class="py-20  bg-gray-700 dark:bg-primary-700 dark:text-white text-black">
+  <section class="py-20  bg-[#FFFBF5] dark:bg-primary-700 dark:text-white text-black">
     <div class="container-custom text-center">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6">Let's Work Together</h2>
       <p class="text-lg max-w-2xl mx-auto mb-10 dark:text-white text-black/90">
