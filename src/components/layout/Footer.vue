@@ -1,10 +1,10 @@
 <script setup>
-import { useThemeStore } from '../../stores/theme';
+// import { useThemeStore } from '../../stores/theme';
 import { computed } from 'vue';
 import { Icon } from '@iconify/vue';
 
-const themeStore = useThemeStore();
-const isDark = computed(() => themeStore.isDark);
+// const themeStore = useThemeStore();
+// const isDark = computed(() => themeStore.isDark);
 
 const currentYear = new Date().getFullYear();
 

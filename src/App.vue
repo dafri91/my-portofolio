@@ -1,35 +1,36 @@
 <script setup>
 import { computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { useThemeStore } from './stores/theme';
+// import { useThemeStore } from './stores/theme';
 import Navbar from './components/layout/Navbar.vue';
 import Footer from './components/layout/Footer.vue';
 
 const route = useRoute();
-const themeStore = useThemeStore();
+// const themeStore = useThemeStore();
 
-const isHomePage = computed(() => route.path === '/');
+// const isHomePage = computed(() => route.path === '/');
 
-watch(
-  () => themeStore.isDark,
-  (isDark) => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  },
-  { immediate: true }
-);
+// watch(
+//   () => themeStore.isDark,
+//   (isDark) => {
+//     if (isDark) {
+//       document.documentElement.classList.add('dark');
+//     } else {
+//       document.documentElement.classList.remove('dark');
+//     }
+//   },
+//   { immediate: true }
+// );
 </script>
 
 <template>
-  <div
+  <!-- <div
     class="flex flex-col min-h-screen"
     :class="[
       themeStore.isDark ? 'bg-gray-900' : 'bg-[#FFFBF5]'
     ]"
-  >
+  > -->
+   <div class="flex flex-col min-h-screen bg-gray-900" >
     <Navbar />
     
     <main class="flex-grow">

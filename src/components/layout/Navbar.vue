@@ -1,11 +1,11 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { useThemeStore } from '../../stores/theme';
+// import { useThemeStore } from '../../stores/theme';
 import { MoonIcon, SunIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 
 const router = useRouter();
-const themeStore = useThemeStore();
+// const themeStore = useThemeStore();
 
 const mobileMenuOpen = ref(false);
 const scrolled = ref(false);
@@ -85,14 +85,14 @@ onUnmounted(() => {
         </router-link>
         
         <!-- Theme Toggle -->
-        <button
+        <!-- <button
           @click="toggleTheme"
           class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           aria-label="Toggle dark mode"
         >
           <SunIcon v-if="isDark" class="h-5 w-5" />
           <MoonIcon v-else class="h-5 w-5" />
-        </button>
+        </button> -->
         
         <!-- CV Download Button -->
         <!-- <a
@@ -106,7 +106,7 @@ onUnmounted(() => {
 
       <!-- Mobile Menu Button -->
       <div class="flex items-center md:hidden space-x-4">
-        <button
+        <!-- <button
           @click="toggleTheme"
           class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           aria-label="Toggle dark mode"
@@ -114,7 +114,7 @@ onUnmounted(() => {
           <SunIcon v-if="isDark" class="h-5 w-5" />
           <MoonIcon v-else class="h-5 w-5" />
         </button>
-        
+         -->
         <button
           @click="toggleMobileMenu"
           class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
