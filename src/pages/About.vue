@@ -220,7 +220,7 @@ watch(showModal, (val) => {
         <div class="w-full md:w-1/3 flex justify-center">
           <div class="flex flex-col items-center">
             <img
-              src="/images/hero.png"
+              src="/images/myhero8.png"
               alt="Profile Photo"
               class="w-48 h-48 rounded-full border-4 border-white dark:border-gray-700 shadow-lg object-cover mb-4"
             />

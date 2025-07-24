@@ -7,12 +7,12 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     {
       id: 1,
       title: 'Electronics E-commerce',
-      description: 'A modern e-commerce frontend prototype built with Vue.js and Tailwind CSS, featuring product listings, cart functionality',
-      image: '/images/screencapture-electronics-ecommerce-nine-vercel-app-2025-06-05-03_02_18.png',
-      tags: ['Vue.js', 'Tailwind css'],
+      description: 'E-commerce electronics site with real-time Firebase backend',
+      image: '/images/electroshop.png',
+      tags: ['Vue.js', 'Tailwind css', 'Firebase'],
       category: 'web',
       links: {
-        demo: 'https://electronics-ecommerce-nine.vercel.app/',
+        demo: 'https://myelectroshop.vercel.app/',
         github: 'https://github.com'
       }
     },
@@ -30,25 +30,25 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     },
     {
       id: 3,
-      title: 'Simple Product Management System',
-      description: 'A simple full-stack product management system with CRUD operations (add, edit, delete), real-time search/filter, and MongoDB data persistence',
-      image: 'https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['Vue.js', 'Node.js', 'Express', 'MongoDB'],
-      category: 'Management System',
+      title: 'Online Course Platform',
+      description: 'online course site with modern layout and course listings',
+      image: '/images/myonlinecourse.png',
+      tags: ['Vue js', 'Tailwind CSS'],
+      category: 'web',
       links: {
-        demo: 'https://testcrud-test.vercel.app/login',
+        demo: 'https://online-course-platform-edu.vercel.app/',
         github: 'https://github.com'
       }
     },
     {
       id: 4,
-      title: 'Coffee Shop',
-      description: 'My first HTML & CSS project: a simple coffee shop website. Features a clean design, responsive layout.',
-      image: '/images/screencapture-webisite-mycoffee-mine-vercel-app-2025-06-05-03_19_40.png',
-      tags: ['Html', 'Css'],
+      title: 'Bookstore Landing Page',
+      description: 'Bookstore landing page built with Vue.js and Tailwind CSS',
+      image: '/images/mybookstore.png',
+      tags: ['Vue js', 'Tailwind CSS'],
       category: 'web',
       links: {
-        demo: 'https://webisite-mycoffee-mine.vercel.app/',
+        demo: 'https://bookstore-eight-ochre.vercel.app/',
         github: 'https://github.com'
       }
     },
@@ -69,8 +69,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
   // Categories for filtering
   const categories = ref([
     { id: 'all', name: 'All Projects' },
-    { id: 'web', name: 'Web Development' },
-    { id: 'Management System', name: 'Management System' },
+    { id: 'web', name: 'Web Development' }
   ]);
 
   // Currently selected category for filtering

@@ -90,8 +90,8 @@ onMounted(() => {
         <div class="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
           <div class="relative w-64 h-64  sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-soft-lg">
             <img 
-              src="/images/hero2.jpg" 
-              alt="John Doe" 
+              src="/images/myhero8.png" 
+              alt="Dafri Mulya" 
               class="w-full h-full object-cover"
             />
           </div>

@@ -69,7 +69,7 @@ onUnmounted(() => {
         to="/"
         class="text-lg sm:text-xl font-bold text-primary-600 dark:text-primary-400 flex items-center space-x-2"
       >
-        <span>Dafri Mulya</span>
+        <span>Portfolio</span>
       </router-link>
 
       <!-- Desktop Navigation -->
